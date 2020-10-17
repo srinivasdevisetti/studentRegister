@@ -23,11 +23,10 @@ public class students {
 	}
 	
 	public void Rmovestudent(String name) {
-	Scanner sc=new Scanner(System.in);
-	name=sc.next();
+	
 		for(student s:students) {
-			if(s.getName()== name)
-				students.remove(s );
+			if(s.getName().compareTo(name)==0)
+				students.remove(s);
 				break;
 		}
 	}

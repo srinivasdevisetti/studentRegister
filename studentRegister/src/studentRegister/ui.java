@@ -30,11 +30,14 @@ public class ui {
 	public void backtohome() {
 		System.out.println("enter 0 to go home");
 		int a=userinput();
+		if(a==0) {
 		switch (a) {
 		case 0 :
 			menu();
 			break;
 		}
+		}else
+			backtohome();
 	}
 
 	public int userinput() {
